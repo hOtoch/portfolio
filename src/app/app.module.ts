@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 
 import { PagesModule } from './pages/pages.module';
 import { MainPageComponent } from './main-page/main-page.component';
+import { SharedModule } from './shared/shared.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
     PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
