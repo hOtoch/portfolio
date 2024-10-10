@@ -5,12 +5,15 @@ main {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: whitesmoke;
     background: linear-gradient(135deg,#21062c , black, #490779);
+}
+
+#skills, app-skills {
+    width: 100%;
 }
 

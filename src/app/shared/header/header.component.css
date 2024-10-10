@@ -17,6 +17,9 @@ nav {
     align-items: center;
     height: 60px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 1px #9400FF solid;
+    border-bottom: 1px #9400FF solid;
     width: 100%;
     list-style: none;
     overflow: hidden;
