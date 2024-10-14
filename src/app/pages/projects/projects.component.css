@@ -1,0 +1,222 @@
+.projects {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+.projects__content {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+}
+
+/* Texto Grande ao Fundo */
+.projects__background-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  font-size: 7rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Título Principal */
+.projects__title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #9400FF;
+}
+
+.project-image-container {
+  position: relative;
+  padding-top: 2rem; 
+  display: inline-block; 
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.project-image-container img {
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2; 
+}
+
+.project-image-container:hover::before {
+  top: 10px; /* Movimenta a moldura e a imagem para cima no hover */
+  left: 10px;
+}
+
+.project-image-container::before {
+  content: ''; 
+  position: absolute;
+  top: 35px;
+  left: 15px; 
+  width: 100%;
+  height: 90%;
+  border: 5px solid #9400FF; 
+  border-radius: 15px; 
+  z-index: -1; 
+  transition: all 0.3s ease; 
+}
+
+
+/* Estilos do Carrossel */
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel__slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150%;
+  transition: opacity 0.5s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.carousel__slide.active {
+  display: flex;
+  opacity: 1;
+}
+
+.carousel__slide.slide-out-left {
+  animation: slideOutLeft 0.3s forwards ease-in-out;
+}
+
+.carousel__slide.slide-out-right {
+  animation: slideOutRight 0.3s forwards ease-in-out;
+}
+
+.carousel__image {
+  width: 100%;
+  max-width: 600px;
+  max-height: 500px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.carousel__info {
+  text-align: left;
+  max-width: 600px;
+}
+
+.carousel__info__header{
+  display: flex;
+  
+}
+
+.carousel__header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+
+}
+
+.carousel__description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.carousel__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.carousel__technologies span {
+  background: #9400FF;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Botões do Carrossel */
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+
+.carousel__button:hover {
+  color: #9400FF;
+}
+
+.carousel__button.prev {
+  left: 0;
+}
+
+.carousel__button.next {
+  right: 0;
+}
+
+.carousel__header{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Botão para GitHub */
+.github-button {
+  background: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+/* Cor do Botão ao Passar o Mouse */
+.github-button:hover {
+  background: #333;
+}
+
+/* Ícone no Botão GitHub */
+.github-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

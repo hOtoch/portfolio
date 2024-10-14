@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 main {
-    height: 100%;
     width: 100%;
+    max-height: 100vh; /* O main crescerá com o conteúdo */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: whitesmoke;
-    background: linear-gradient(135deg,#21062c , black, #490779);
 }
 
-#skills, app-skills {
+#skills, app-skills,app-projects,#projects, #services, app-services, #contact,app-contact {
     width: 100%;
 }
 

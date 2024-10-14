@@ -1,1 +1,43 @@
-<p>projects works!</p>
+<section class="projects">
+    <div class="projects__content">
+      <h1 class="projects__background-text">Projetos</h1>
+  
+      <div class="projects__title">
+        <h2>Projetos</h2>
+      </div>
+  
+   
+      <div class="carousel">
+        <!-- Botão para Anterior -->
+        <button class="carousel__button prev" (click)="previousProject()">&#10094;</button>
+  
+        <!-- Slide do Projeto Atual -->
+        <div class="carousel__slide" *ngFor="let project of projects; let i = index" [class.active]="i === currentProject">
+            <div class="project-image-container">
+                <img [src]="project.image" alt="{{ project.title }}" class="carousel__image" />
+            </div>
+            <div class="carousel__header">
+           
+                <h3>{{ project.title }}</h3>
+
+                <button class="github-button" (click)="openProject(project.link)">
+                    <img src="assets/images/github.png" alt="GitHub" class="github-icon">
+                </button>
+            </div>
+
+
+          <div class="carousel__info">
+            <p class="carousel__description">{{ project.description }}</p>
+            <div class="carousel__technologies">
+              <span *ngFor="let tech of project.technologies">{{ tech }}</span>
+            </div>
+
+          </div>
+        </div>
+  
+        <!-- Botão para Próximo -->
+        <button class="carousel__button next" (click)="nextProject()">&#10095;</button>
+      </div>
+    </div>
+</section>
+  
