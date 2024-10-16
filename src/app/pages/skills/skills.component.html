@@ -3,191 +3,87 @@
 <section class="skills">
     <div class="skills__content">
       
-      <h1 class="skills__background-text">Skills</h1>
-      
-      <div class="skills__content__title">
-        <h1>Skills</h1>
-      </div>
-  
-        <div class="skills__area ">
+        <h1 class="skills__background-text">Skills</h1>
         
-            <div class="skill-box">
-                <i class="devicon-html5-plain colored"></i>
-                <p>HTML5</p>
+        <div class="skills__content__title">
+            <h1>Skills</h1>
+        </div>
+    
+        
+        <div class="skills__grid ">
+        
+            <div class="skill-box" *ngFor="let skill of skills">
+                <i [class]="skill.icon"></i>
+                <p>{{ skill.name }}</p>
                 <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
+                  <span
+                    class="star"
+                    *ngFor="let star of [1,2,3,4,5]; let idx = index"
+                    [class.filled]="idx < skill.stars"
+                    >&#9733;</span>
                 </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-css3-plain colored"></i>
-                <p>CSS3</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            
-            <div class="skill-box">
-                <i class="devicon-javascript-plain colored"></i>
-                <p>JavaScript</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-typescript-plain"></i>
-                <p>TypeScript</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-angularjs-plain colored"></i>
-                <p>Angular</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-nodejs-plain colored"></i>
-                <p>Node.js</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-python-plain colored"></i>
-                <p>Python</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-flask-original-wordmark colored"></i>
-                <p>Flask</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">          
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
-          
-                <p>Selenium</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-pandas-plain"></i>
-                <p>Pandas</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-java-plain"></i>
-                <p>Java</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-          
-                <p>Spring</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
-          
-                <p>SQL</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            <div class="skill-box">
-                <i class="devicon-c-plain"></i>
-                <p>C</p>
-                <div class="stars">
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-
-            
+              </div>
 
         </div>
+
+        <div class="carousels">
+            <div class="carousel carousel1">
+                <button class="carousel__button prev" (click)="previousSkill1()">&#10094;</button>
+        
+                <div class="carousel__slides">
+                  <div
+                    class="carousel__slide"
+                    *ngFor="let skill of skillsCarousel1; let i = index"
+                    [class.active]="i === currentSkill1"
+                  >
+                    <div class="skill-box">
+                      <i [class]="skill.icon"></i>
+                      <p>{{ skill.name }}</p>
+                      <div class="stars">
+                        <span
+                          class="star"
+                          *ngFor="let star of [1,2,3,4,5]; let idx = index"
+                          [class.filled]="idx < skill.stars"
+                        >&#9733;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <button class="carousel__button next" (click)="nextSkill1()">&#10095;</button>
+            </div>
+        
+              <!-- Segundo Carrossel -->
+            <div class="carousel carousel2">
+                <button class="carousel__button prev" (click)="previousSkill2()">&#10094;</button>
+        
+                <div class="carousel__slides">
+                  <div
+                    class="carousel__slide"
+                    *ngFor="let skill of skillsCarousel2; let i = index"
+                    [class.active]="i === currentSkill2"
+                  >
+                    <div class="skill-box">
+                      <i [class]="skill.icon"></i>
+                      <p>{{ skill.name }}</p>
+                      <div class="stars">
+                        <span
+                          class="star"
+                          *ngFor="let star of [1,2,3,4,5]; let idx = index"
+                          [class.filled]="idx < skill.stars"
+                        >&#9733;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <button class="carousel__button next" (click)="nextSkill2()">&#10095;</button>
+            </div>
+
+        </div>
+        
+       
+          
     </div>
 </section>
   

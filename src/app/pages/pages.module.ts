@@ -8,6 +8,8 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { CommonModule } from '@angular/common';
 import { SkillsComponent } from './skills/skills.component';
+import { AppModule } from '../app.module';
+
 
 
 @NgModule({

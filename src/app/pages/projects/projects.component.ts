@@ -20,7 +20,7 @@ export class ProjectsComponent {
       title: 'Varredor de vagas',
       description: 'Um scraper que busca vagas de emprego no site da Indeed de acordo com as palavras-chave fornecidas.',
       image: 'assets/images/vagas.png',
-      technologies: ['Scrapy', 'PySimpleGUI'],
+      technologies: ['Python','Scrapy', 'PySimpleGUI'],
       link: 'https://github.com/hOtoch/varredor_de_vagas'
     },
     {

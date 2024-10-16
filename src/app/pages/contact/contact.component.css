@@ -7,6 +7,7 @@
     padding: 100px 20px;
     text-align: center;
     overflow: hidden;
+    height: 100vh;
 }
 
 .contact__background-text {
@@ -23,7 +24,8 @@
   
 
 .contact__content{
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -66,7 +68,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: #9400FF;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 .contact__info h3 {
     font-size: 1.5rem;
@@ -92,8 +94,8 @@ text-decoration: underline;
     width: 100%;
     border: 3px solid #9400FF;
     border-radius: 2rem;
-    padding: 3rem;
-    margin-bottom: 2rem;
+    padding: 1.7rem 3rem;
+    margin-bottom: 5rem;
 }
 
 .contact__form form {
@@ -127,7 +129,7 @@ border-color: #9400FF;
 }
 
 .contact__form button {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 12px;
     background-color: #9400FF;
     color: black;
@@ -141,4 +143,184 @@ border-color: #9400FF;
 
 .contact__form button:hover {
 background-color: #7A00D1;
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        padding: 80px 20px;
+        height: auto;
+    }
+
+    .contact__background-text {
+        font-size: 5rem;
+        top: 15%;
+    }
+
+    .contact__title h2 {
+        font-size: 2rem;
+        margin-top: 8rem;
+    }
+
+    .contact__content {
+        gap: 3rem;
+    }
+
+    .contact__form {
+        padding: 2rem;
+    }
+
+    .contact__info {
+        padding: 3rem;
+    }
+
+    .contact__info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact__info p {
+        font-size: 1.1rem;
+    }
+
+    .contact__form label {
+        font-size: 1.1rem;
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+        font-size: 0.95rem;
+    }
+
+    .contact__form button {
+        font-size: 1.1rem;
+    }
+}
+
+/* Smartphones e telas pequenas */
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 15px;
+        height: auto;
+    }
+
+    .contact__background-text {
+        font-size: 4rem;
+        top: 5%;
+    }
+
+    .contact__title h2 {
+        font-size: 1.5rem;
+        margin-top: 10rem;
+    }
+
+    .contact__content {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+        gap: 0.4rem;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 0.8rem;
+    }
+
+    .contact__form,
+    .contact__info {
+        width: 100%;
+        padding: 0.6rem;
+    }
+
+    .contact__form {
+        margin-bottom: 8rem;
+        order: 2; /* Opcional: altera a ordem dos elementos */
+    }
+
+    .contact__info {
+        order: 1; /* Opcional: altera a ordem dos elementos */
+    }
+
+    .contact__info h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact__info p {
+        font-size: 0.9rem;
+    }
+
+    .contact__form label {
+        font-size: 0.9rem;
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact__form button {
+        font-size: 0.9rem;
+    }
+
+    .contact__info__icon {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .linkedin-icon,
+    .whatsapp-icon,
+    .github-icon {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+/* Smartphones muito pequenos */
+@media (max-width: 480px) {
+    .contact {
+        padding: 20px 10px;
+    }
+
+    .contact__background-text {
+        font-size: 3rem;
+        top: 5%;
+    }
+
+    .contact__title h2 {
+        font-size: 1.2rem;
+        margin-top: 8rem;
+    }
+
+    .contact__form,
+    .contact__info {
+        padding: 0.5rem;
+    }
+
+    .contact__content {
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    .contact__info h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact__info p {
+        font-size: 0.7rem;
+    }
+
+    .contact__form label {
+        font-size: 0.7rem;
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+        font-size: 0.7rem;
+    }
+
+    .contact__form button {
+        font-size: 0.7rem;
+    }
+
+    .contact__info__icon {
+        height: 1.0rem;
+        width: 1.0rem;
+    }
 }

@@ -1,4 +1,6 @@
 <app-header></app-header>
+<ngx-particles  [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
+
 <main>
     <section id="home">
         <app-home></app-home>

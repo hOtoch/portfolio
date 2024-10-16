@@ -1,13 +1,11 @@
-
-.apresentation{
-    height: calc(100vh - 60px);;
+.apresentation {
+    height: calc(100vh - 60px);
     width: 100vw;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     padding: 20px;
-    overflow: hidden;
+    gap: 2rem;
 }
 
 
@@ -74,22 +72,127 @@
     margin-top: 2rem;
     border-radius: 10%;
     position: relative;
+    box-shadow: 0 0 15px #9400FF, 0 0 30px #9400FF, 0 0 45px #9400FF, 0 0 60px #9400FF;
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 1;
 }
 
-.apresentation__image::before {
-    content: '';
-    position: absolute;
-    margin-top: 17%;
-    width: 90%;
-    height: 90%;
-    border-radius: 10%; /* Combine com o border-radius da imagem */
-    padding: 6px; 
-    background: linear-gradient(135deg, #41036d, #000000);
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    z-index: 1;
-    box-sizing: border-box;
+
+.apresentation__image:hover img {
+    box-shadow: 0 0 20px #9400FF, 0 0 40px #9400FF, 0 0 60px #9400FF, 0 0 80px #9400FF;
 }
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+    .apresentation {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 20px;
+    }
+
+    .apresentation__text h1 {
+        font-size: 3rem; /* Reduz o tamanho do texto */
+    }
+
+    .apresentation__text h2 {
+        font-size: 1.5rem; /* Ajusta o subtítulo */
+    }
+
+    .apresentation__image {
+        display: none;
+        max-width: 50%; /* Aumenta a imagem para ocupar mais espaço */
+    }
+
+    .apresentation__image img {
+        height: 35vh; /* Garante que a altura seja ajustada corretamente */
+    }
+}
+
+/* Smartphones e telas pequenas */
+@media (max-width: 768px) {
+    .apresentation {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    .apresentation__text{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .apresentation__text h1 {
+        font-size: 3.5rem; /* Tamanho reduzido do título */
+    }
+
+    .apresentation__text h2 {
+        font-size: 1.6rem; /* Ajusta o subtítulo */
+    }
+    .apresentation__text__buttons {
+        display: flex;
+        justify-content: center; /* Centraliza os botões horizontalmente */
+        align-items: center;     /* Centraliza os botões verticalmente, se necessário */
+        gap: 20px;               /* Mantém o espaço entre os botões */
+        margin-top: 2rem;        /* Ajusta o espaçamento acima dos botões */
+        flex-wrap: wrap;         /* Permite que os botões quebrem linha se necessário */
+    }
+
+    .apresentation__text__buttons button:first-child, 
+    .apresentation__text__buttons button:last-child {
+        padding: 10px 15px; /* Menor padding para botões */
+        font-size: 0.9rem;
+    }
+
+    .apresentation__image {
+        display: none;
+        max-width: 50%; /* Aumenta a imagem em telas pequenas */
+    }
+
+    .apresentation__image img {
+        height: 50vh;
+    }
+
+    
+}
+
+/* Smartphones muito pequenos */
+@media (max-width: 480px) {
+    .apresentation {
+        margin-top: 5vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        padding: 20px;
+    }
+    .apresentation__text h1 {
+        font-size: 2.5rem; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .apresentation__text h2 {
+        font-size: 1.2rem; /* Ajusta o subtítulo */
+    }
+
+    .apresentation__text__buttons button {
+        padding: 8px 10px; /* Menor padding para botões */
+        font-size: 0.8rem;
+    }
+
+    .apresentation__image {
+        display: block;
+        max-width: 80%; /* Imagem ocupa 100% da largura */
+    }
+
+    .apresentation__image img {
+        height: auto;
+        margin-top: 0.5rem;
+    }
+}
+

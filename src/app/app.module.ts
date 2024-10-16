@@ -7,19 +7,23 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SharedModule } from './shared/shared.module';
+import { ParticlesComponent } from './particles/particles.component';
+import { NgxParticlesModule } from '@tsparticles/angular';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent
+    MainPageComponent,
+    ParticlesComponent
   ],
   imports: [
     BrowserModule,
     PagesModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

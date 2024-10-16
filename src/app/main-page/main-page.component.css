@@ -6,9 +6,16 @@ main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 1;
 }
+
 
 #skills, app-skills,app-projects,#projects, #services, app-services, #contact,app-contact {
     width: 100%;
 }
+
+ngx-particles {
+    z-index: -1; /* Envia as partículas para o fundo */
+  }
+  
 

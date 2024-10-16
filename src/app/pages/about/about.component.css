@@ -9,6 +9,7 @@
     gap: 3rem;
     color: whitesmoke;
     text-align: left;
+    margin-top: 0rem;
 }
 
 .about__content {
@@ -42,7 +43,7 @@
 .about__background-text {
     position: absolute;
     top: 10%; 
-    left: 20%;
+    left: 25%;
     font-size: 7rem; 
     font-weight: 800; 
     color: rgba(255, 255, 255, 0.05);
@@ -73,9 +74,9 @@
 
 .about__apresentation_image img{
     width: 100%;
-    height: 80%;
+    height: 90%;
     max-width: 100%;
-    margin-top: 2rem;
+    margin-top: rem;
     border-radius: 10%;
     position: relative;
 }
@@ -84,8 +85,8 @@
     content: '';
     position: absolute;
     margin-top: 17%;
-    width: 102%;
-    height: 92%;
+    width: 100%;
+    height: 90%;
     border-radius: 10%; /* Combine com o border-radius da imagem */
     padding: 6px; 
     background: linear-gradient(135deg, #41036d, #000000);
@@ -109,4 +110,87 @@
 
 .about__content__title-underline.animate {
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column; /* Alinha verticalmente em tablets */
+        padding: 40px;
+        gap: 2rem;
+    }
+   
+    .about__content {
+        align-items: center;
+    }
+
+    .about__apresentation_image {
+        display: none;
+    }
+
+    .about__content__text {
+        font-size: 1.1rem; /* Ajusta o tamanho do texto */
+    }
+
+    .about__background-text {
+        font-size: 4rem; /* Tamanho menor para o texto de fundo */
+        left: 30%;
+        top: 10%;
+    }
+}
+
+/* Smartphones e telas pequenas (<= 768px) */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Coluna para mobile */
+        padding: 20px;
+        gap: 1.5rem;
+    }
+
+    .about__apresentation_image {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .about__content__title {
+        font-size: 1.5rem; /* Ajusta o tamanho do título */
+        text-align: center;
+    }
+
+    .about__content__text {
+        font-size: 1rem; /* Texto menor */
+        text-align: center; /* Centraliza o texto para melhor visualização */
+    }
+
+    .about__background-text {
+        font-size: 3rem; /* Tamanho menor para o texto de fundo */
+        left: 32%;
+        top: 10%;
+    }
+}
+
+/* Smartphones muito pequenos (<= 480px) */
+@media (max-width: 480px) {
+    .about__content__title {
+        font-size: 1.2rem; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .about__content__text {
+        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+    }
+
+    .about__content__button button {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    .about__apresentation_image {
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .about__background-text {
+        font-size: 2rem; /* Ajusta o texto de fundo para telas muito pequenas */
+        left: 8rem;
+        top: 30px;
+    }
 }
