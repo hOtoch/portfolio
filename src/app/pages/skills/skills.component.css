@@ -98,6 +98,12 @@
     color: #ffffff;
 }
 
+.skill-image {
+    width: 5rem; /* Tamanho da imagem */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
 .stars {
     display: flex;
     gap: 5px;

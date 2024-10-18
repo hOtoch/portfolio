@@ -43,7 +43,7 @@
 .about__background-text {
     position: absolute;
     top: 10%; 
-    left: 25%;
+    left: 33%;
     font-size: 7rem; 
     font-weight: 800; 
     color: rgba(255, 255, 255, 0.05);
@@ -133,7 +133,7 @@
 
     .about__background-text {
         font-size: 4rem; /* Tamanho menor para o texto de fundo */
-        left: 30%;
+        left: 35%;
         top: 10%;
     }
 }
@@ -190,7 +190,7 @@
 
     .about__background-text {
         font-size: 2rem; /* Ajusta o texto de fundo para telas muito pequenas */
-        left: 8rem;
+        left: 35%;
         top: 30px;
     }
 }

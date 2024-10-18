@@ -66,6 +66,7 @@ export class SkillsComponent  {
     },
     {
       name: 'Selenium',
+      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg',
       icon: 'devicon-selenium-original',
       stars: 4
     },
@@ -81,7 +82,7 @@ export class SkillsComponent  {
     },
     {
       name: 'Spring',
-      icon: 'devicon-spring-original',
+      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
       stars: 3
     },
     {
