@@ -192,6 +192,10 @@
 
 /* Smartphones muito pequenos (<= 480px) */
 @media (max-width: 480px) {
+    .about__content{
+        margin-top: 2rem;
+    }
+
     .about__content__title {
         font-size: 1.2rem; /* Reduz ainda mais o tamanho do título */
     }
@@ -212,7 +216,7 @@
 
     .about__background-text {
         font-size: 2rem; /* Ajusta o texto de fundo para telas muito pequenas */
-        left: 35%;
-        top: 30px;
+        left: 32%;
+        top: 14%;
     }
 }
