@@ -126,7 +126,7 @@
     }
 
     .apresentation__image img {
-        height: 70vh; /* Garante que a altura seja ajustada corretamente */
+        height: 60vh; /* Garante que a altura seja ajustada corretamente */
         width: 100%;
     }
 }

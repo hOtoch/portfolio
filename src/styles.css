@@ -30,8 +30,8 @@ body::-webkit-scrollbar {
 }
 
 section {
-    height: 100vh; /* Ocupa 100% da altura da tela do usuário */
-    max-height: 100vh;
+    height: 110vh; /* Ocupa 100% da altura da tela do usuário */
+    max-height: 110vh;
     text-align: center;
 }
 
