@@ -6,7 +6,7 @@
     display: flex; /* Usamos flexbox para centralizar o conteúdo */
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box; /* Garante que padding e bordas sejam considerados no tamanho */
     overflow: visible; /* Previne que o conteúdo exceda a tela */
 }
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .skills__carousel {
@@ -33,7 +34,7 @@
 
 .skills__background-text {
     position: absolute;
-    top: 10vh;
+    top: 20%;
     left: 50%;
     font-size: 10vw;
     font-weight: 800;
@@ -45,12 +46,12 @@
   
 
 .skills__content__title h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: bold;
     font-family: "Dancing Script", sans-serif;
     color: #9400FF;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 3.5rem;
+
 }
 
 .skills__grid {
@@ -58,6 +59,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
+    margin-top: 1rem;
     cursor: pointer;
     justify-items: center;
 }
@@ -102,7 +104,7 @@
     width: 5rem; /* Tamanho da imagem */
     height: auto;
     margin-bottom: 10px;
-  }
+}
 
 .stars {
     display: flex;
@@ -229,6 +231,18 @@
     }
   }
 
+@media (max-width: 1280px){
+    .skills {
+        padding: 40px 20px;
+    }
+
+    .skills__grid {
+        grid-template-columns: repeat(auto-fill, minmax(10px, 150px));
+        gap: 1rem;
+    }
+    
+}
+
 @media (max-width: 1024px) {
     .skills {
         padding: 40px 20px;
@@ -236,11 +250,12 @@
 
     .skills__background-text {
         font-size: 5rem;
-        top: 10%;
+        top: 20%;
     }
 
-    .skills__content__title h1 {
+    .skills__content__title{
         font-size: 1.8rem;
+        margin-bottom: 4rem;
     }
 
     .skills__grid {
@@ -267,10 +282,56 @@
     }
 }
 
+@media (min-width: 2000px) {
+
+    
+
+    .skills__background-text {
+        font-size: 10rem;
+        top: 20rem;
+    }
+
+    .skills__content__title h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills__grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 3rem 10rem;
+        margin-top: 0;
+        gap: 3rem;
+    }
+
+    .skill-box {
+        padding: 30px;
+    }
+
+    .skill-box i,
+    .skill-box img {
+        font-size: 7rem;
+        width: 7rem;
+    }
+
+    .skill-box p {
+        font-size: 1.6rem;
+    }
+
+    .star {
+        font-size: 2rem;
+    }
+}
+
 /* Smartphones e telas pequenas */
 @media (max-width: 768px) {
     .skills {
-        padding: 30px 15px;
+        height: 60%;
+        padding: 50px 20px;
+    }
+    .skills__content {
+        padding: 0;
+        height: 60%;
     }
 
     .carousels {
@@ -279,10 +340,7 @@
 
     .skills__background-text {
         font-size: 4rem;
-        top: 50px;
-    }
-    .skills__content{
-        margin-top: 10vh;
+        top: 20%;
     }
 
     .skills__content__title h1 {

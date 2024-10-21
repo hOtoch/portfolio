@@ -58,6 +58,13 @@ nav {
     border-radius: 2px;
 }
 
+@media (min-width: 2000px) {
+    .header__options__option{
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         display: none; /* Esconde o header para telas menores */

@@ -23,7 +23,7 @@
 }
 
 .about__content__title{
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: "Dancing Script", sans-serif;
     color: #9400FF;
     margin-bottom: 1rem;
@@ -35,7 +35,7 @@
 
 .about__content__text{
     font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 
@@ -58,7 +58,7 @@
     background-color: black;
     border-radius: 10%;
     border: 2px solid #9400FF;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     max-width: 100%;
 }
@@ -112,6 +112,27 @@
     width: 100%;
 }
 
+@media (min-width: 2000px) {
+    .about__background-text {
+        font-size: 7rem; /* Tamanho maior para telas grandes */
+        left: 40%;
+        top: 10%;
+    }
+
+    .about__content__title{
+        font-size: 3rem; /* Ajusta o tamanho do título */
+    }
+
+    .about__content__text {
+        font-size: 2.2rem; /* Ajusta o tamanho do texto */
+    }
+
+    .about__content__button button {
+        padding: 20px 25px;
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .about {
         flex-direction: column; /* Alinha verticalmente em tablets */
@@ -152,6 +173,7 @@
     }
 
     .about__content__title {
+        margin-top: 3.5rem;
         font-size: 1.5rem; /* Ajusta o tamanho do título */
         text-align: center;
     }
@@ -163,8 +185,8 @@
 
     .about__background-text {
         font-size: 3rem; /* Tamanho menor para o texto de fundo */
-        left: 32%;
-        top: 10%;
+        left: 35%;
+        top: 20%;
     }
 }
 

@@ -12,7 +12,7 @@
 
 .contact__background-text {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     font-size: 7rem;
     font-weight: 800;
@@ -25,7 +25,7 @@
 
 .contact__content{
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -68,7 +68,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: #9400FF;
-    margin-top: 10rem;
+    margin-top: 9rem;
 }
 .contact__info h3 {
     font-size: 1.5rem;
@@ -145,6 +145,61 @@ border-color: #9400FF;
 background-color: #7A00D1;
 }
 
+@media (min-width: 2000px) {
+
+    .contact__background-text {
+        font-size: 8rem;
+        top: 15%;
+    }
+
+    .contact__title h2 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    .contact__content {
+        margin-top: 10rem;
+        gap: 3rem;
+    }
+
+    .contact__form {
+        padding: 7rem;
+    }
+
+    .contact__info {
+        padding: 3rem;
+        width: 100%;
+    }
+
+    .contact__info h3 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact__info p {
+        font-size: 2rem;
+    }
+
+    .contact__form label {
+        font-size: 2rem;
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+        font-size: 1.3rem;
+    }
+
+    .contact__form button {
+        font-size: 1.8rem;
+    }
+
+    .contact__info__icons img,.contact__info__icons a{
+        width: 3rem;
+        height: 3rem;
+        padding: 0.2rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .contact {
         padding: 80px 20px;
@@ -163,6 +218,7 @@ background-color: #7A00D1;
 
     .contact__content {
         gap: 3rem;
+        margin-top: 6rem;
     }
 
     .contact__form {
@@ -199,41 +255,30 @@ background-color: #7A00D1;
 /* Smartphones e telas pequenas */
 @media (max-width: 768px) {
     .contact {
-        padding: 30px 15px;
-        height: auto;
+        padding: 20px 10px;
     }
 
     .contact__background-text {
-        font-size: 4rem;
-        top: 5%;
+        font-size: 3rem;
+        top: 12%;
     }
 
     .contact__title h2 {
         font-size: 1.5rem;
-        margin-top: 10rem;
-    }
-
-    .contact__content {
-        flex-direction: column; /* Muda para coluna em telas pequenas */
-        gap: 0.4rem;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-top: 0.8rem;
+        margin-top: 2rem;
     }
 
     .contact__form,
     .contact__info {
-        width: 100%;
-        padding: 0.6rem;
+        padding: 1.2rem;
     }
 
-    .contact__form {
-        margin-bottom: 8rem;
-        order: 2; /* Opcional: altera a ordem dos elementos */
-    }
-
-    .contact__info {
-        order: 1; /* Opcional: altera a ordem dos elementos */
+    .contact__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+        gap: 2rem;
     }
 
     .contact__info h3 {
@@ -241,32 +286,25 @@ background-color: #7A00D1;
     }
 
     .contact__info p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .contact__form label {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .contact__form input,
     .contact__form textarea {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .contact__form button {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .contact__info__icon {
-        height: 1.2rem;
-        width: 1.2rem;
-    }
-
-    .linkedin-icon,
-    .whatsapp-icon,
-    .github-icon {
-        width: 90%;
-        height: 90%;
+        height: 2rem;
+        width: 2rem;
     }
 }
 

@@ -41,6 +41,7 @@
     border: 1px solid #9400FF;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .apresentation__text__buttons button:last-child{
@@ -52,6 +53,7 @@
     font-size: 1rem;
     cursor: pointer;
     max-width: 100%;
+    font-weight: bold;
 }
 
 .apresentation__text__buttons button:hover{
@@ -80,6 +82,53 @@
 
 .apresentation__image:hover img {
     box-shadow: 0 0 20px #9400FF, 0 0 40px #9400FF, 0 0 60px #9400FF, 0 0 80px #9400FF;
+}
+
+@media (min-width: 2000px) {
+    .apresentation {
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 20px;
+    }
+
+    .apresentation__text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentation__text__buttons button:first-child, .apresentation__text__buttons button:last-child{
+        padding: 40px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .apresentation__text h1 {
+        font-size: 6rem; /* Aumenta o tamanho do texto */
+    }
+
+    .apresentation__text h2 {
+        font-size: 2rem; /* Ajusta o subtítulo */
+    }
+
+    .apresentation__text p {
+        font-size: 2rem; /* Ajusta o tamanho do texto */
+    }
+
+    .apresentation__image {
+        display: block;
+        max-width: 50%; /* Aumenta a imagem para ocupar mais espaço */
+    }
+
+    .apresentation__image img {
+        height: 70vh; /* Garante que a altura seja ajustada corretamente */
+        width: 100%;
+    }
 }
 
 /* Tablets e telas médias */
