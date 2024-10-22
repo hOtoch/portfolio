@@ -1,6 +1,6 @@
 export const environment = {
     production: true,
-    serviceID: process.env['NG_APP_SERVICE_ID'] || '',
-    templateID: process.env['NG_APP_TEMPLATE_ID'] || '',
-    publicKey: process.env['NG_APP_PUBLIC_KEY'] || ''
+    serviceID: (window as any).NG_APP_SERVICE_ID || '',
+    templateID: (window as any).NG_APP_TEMPLATE_ID || '',
+    publicKey: (window as any).NG_APP_PUBLIC_KEY || ''
 };
