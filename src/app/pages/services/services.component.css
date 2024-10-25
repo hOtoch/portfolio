@@ -186,7 +186,9 @@
         padding: 40px 10px;
     }
 
-
+    .services__title{
+        margin-bottom: 2rem;
+    }
     .services__title h2 {
         font-size: 2rem;
     }

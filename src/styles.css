@@ -30,9 +30,13 @@ body::-webkit-scrollbar {
 }
 
 section {
-    height: 110vh; /* Ocupa 100% da altura da tela do usuário */
+    height: 100vh; /* Ocupa 100% da altura da tela do usuário */
     max-height: 110vh;
     text-align: center;
+}
+
+#contact{
+    height: 120vh;
 }
 
 @media (max-width: 768px) {
@@ -40,6 +44,11 @@ section {
         height: auto;
         max-height: auto;
     }
+
+    #services{
+        height: 90vh;
+    }
+    
 }
 
 
