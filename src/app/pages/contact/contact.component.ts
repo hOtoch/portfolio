@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import emailjs from '@emailjs/browser';
-import { environment } from 'src/environments/environment.vercel';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact',
