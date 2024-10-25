@@ -229,25 +229,30 @@
         padding: 20px;
     }
     .apresentation__text h1 {
-        font-size: 2.5rem; /* Reduz ainda mais o tamanho do título */
+        font-size: 3rem; /* Reduz ainda mais o tamanho do título */
     }
 
     .apresentation__text h2 {
-        font-size: 1.2rem; /* Ajusta o subtítulo */
+        font-size: 2rem; /* Ajusta o subtítulo */
+    }
+
+    .apresentation__text p {
+        font-size: 1.5rem; /* Ajusta o tamanho do texto */
     }
 
     .apresentation__text__buttons button {
         padding: 8px 10px; /* Menor padding para botões */
-        font-size: 0.8rem;
+        font-size: 2rem;
     }
 
     .apresentation__image {
         display: block;
-        max-width: 80%; /* Imagem ocupa 100% da largura */
+        max-width: 100%;
+        margin-top: 2rem;
     }
 
     .apresentation__image img {
-        height: auto;
+        height: 25vh;
         margin-top: 0.5rem;
     }
 }

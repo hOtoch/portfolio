@@ -334,7 +334,7 @@ background-color: #7A00D1;
     }
 
     .contact__title h2 {
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin-top: 3rem;
     }
 
@@ -346,28 +346,28 @@ background-color: #7A00D1;
     
 
     .contact__info h3 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .contact__info p {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 
     .contact__form label {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 
     .contact__form input,
     .contact__form textarea {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 
     .contact__form button {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 
     .contact__info__icon {
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 2rem;
+        width: 2rem;
     }
 }

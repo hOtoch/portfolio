@@ -386,7 +386,7 @@
     }
 
     .skills__content__title h1 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .skills__area {
@@ -405,11 +405,11 @@
     }
 
     .skill-box p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     .star {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 }
 

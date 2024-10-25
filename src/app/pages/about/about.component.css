@@ -203,11 +203,11 @@
     }
 
     .about__content__title {
-        font-size: 1.2rem; /* Reduz ainda mais o tamanho do título */
+        font-size: 2rem; /* Reduz ainda mais o tamanho do título */
     }
 
     .about__content__text {
-        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+        font-size: 1.2rem; /* Ajusta o tamanho do texto */
     }
 
     .about__content__button button {
@@ -224,5 +224,9 @@
         font-size: 2rem; /* Ajusta o texto de fundo para telas muito pequenas */
         left: 32%;
         top: 14%;
+    }
+
+    .about__content__button button{
+        font-size: 1.2rem;
     }
 }
