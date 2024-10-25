@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 10px;
+    padding: 0px 10px;
     text-align: center;
     overflow: hidden;
   }
@@ -334,7 +334,7 @@
   }
 
   .projects__title h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
   }
 
   .carousel__slide{

@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 20px;
+    padding: 0px 20px;
     text-align: center;
     overflow: hidden;
     height: 100vh;
@@ -150,6 +150,7 @@ background-color: #7A00D1;
 @media (max-width: 1500px){
     .contact__title {
         margin-top: 0rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -272,7 +273,7 @@ background-color: #7A00D1;
     }
 
     .contact__title h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 2rem;
     }
 
@@ -311,8 +312,8 @@ background-color: #7A00D1;
     }
 
     .contact__info__icon {
-        height: 2rem;
-        width: 2rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 

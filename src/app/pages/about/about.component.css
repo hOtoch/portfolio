@@ -19,11 +19,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .about__content__title{
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     color: #9400FF;
     margin-bottom: 1rem;
     display: flex;
@@ -54,7 +54,7 @@
     padding: 15px 20px;
     color: #9400FF;
     background-color: black;
-    border-radius: 10%;
+    border-radius: 5%;
     border: 2px solid #9400FF;
     font-size: 1.5rem;
     cursor: pointer;
@@ -172,7 +172,7 @@
 
     .about__content__title {
         margin-top: 3.5rem;
-        font-size: 1.5rem; /* Ajusta o tamanho do título */
+        font-size: 2rem; /* Ajusta o tamanho do título */
         text-align: center;
     }
 
@@ -185,6 +185,10 @@
         font-size: 3rem; /* Tamanho menor para o texto de fundo */
         left: 35%;
         top: 20%;
+    }
+
+    .about__content__button{
+        margin-top: 1rem;
     }
 }
 

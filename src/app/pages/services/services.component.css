@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 20px;
+    padding: 0px 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -148,7 +148,7 @@
     }
 
     .services__title h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .services__background-text {

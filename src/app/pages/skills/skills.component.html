@@ -2,8 +2,6 @@
 
 <section class="skills">
     <div class="skills__content">
-     
-        <h1 class="skills__background-text">Skills</h1>
         
         <div class="skills__content__title">
             <h1>Skills</h1>
@@ -43,7 +41,13 @@
                     [class.active]="i === currentSkill1"
                   >
                     <div class="skill-box">
-                      <i [class]="skill.icon"></i>
+                      <ng-container *ngIf="skill.image; else iconTemplate">
+                        <img [src]="skill.image" alt="{{ skill.name }}" class="skill-image">
+                      </ng-container>
+                      <!-- Exibe o ícone padrão se não houver imagem -->
+                      <ng-template #iconTemplate>
+                        <i [class]="skill.icon"></i>
+                      </ng-template>
                       <p>{{ skill.name }}</p>
                       <div class="stars">
                         <span
@@ -70,7 +74,13 @@
                     [class.active]="i === currentSkill2"
                   >
                     <div class="skill-box">
-                      <i [class]="skill.icon"></i>
+                      <ng-container *ngIf="skill.image; else iconTemplate">
+                        <img [src]="skill.image" alt="{{ skill.name }}" class="skill-image">
+                      </ng-container>
+                      <!-- Exibe o ícone padrão se não houver imagem -->
+                      <ng-template #iconTemplate>
+                        <i [class]="skill.icon"></i>
+                      </ng-template>
                       <p>{{ skill.name }}</p>
                       <div class="stars">
                         <span
