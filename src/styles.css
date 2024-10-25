@@ -46,6 +46,7 @@ section {
     }
 
     #contact{
+        max-height: 120vh;
         height: 120vh;
     }
 
