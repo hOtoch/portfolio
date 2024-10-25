@@ -220,7 +220,6 @@
 /* Smartphones muito pequenos */
 @media (max-width: 480px) {
     .apresentation {
-        margin-top: 5vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -253,6 +252,7 @@
 
     .apresentation__image img {
         height: 25vh;
+        width: 15vh;
         margin-top: 0.5rem;
     }
 }
