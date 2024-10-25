@@ -163,7 +163,7 @@
     }
 
     .apresentation__image img {
-        height: 35vh; /* Garante que a altura seja ajustada corretamente */
+        height: 28vh; /* Garante que a altura seja ajustada corretamente */
     }
 }
 

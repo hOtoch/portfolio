@@ -251,9 +251,9 @@
         top: 20%;
     }
 
-    .skills__content__title{
-        font-size: 1.8rem;
-        margin-bottom: 4rem;
+    .skills__content__title h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
     }
 
     .skills__grid {
@@ -272,11 +272,11 @@
     }
 
     .skill-box p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     } 
 
     .star {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 

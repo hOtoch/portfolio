@@ -114,7 +114,7 @@
     }
 
     .services__title h2 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .services__background-text {
@@ -123,11 +123,11 @@
     }
 
     .service-box h3 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .service-box p {
-        font-size: 0.95rem;
+        font-size: 1.5rem;
     }
 
     .service-icon img {
@@ -148,7 +148,7 @@
     }
 
     .services__title h2 {
-        font-size: 2rem;
+        font-size: rem;
     }
 
     .services__background-text {

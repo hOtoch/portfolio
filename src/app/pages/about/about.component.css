@@ -137,6 +137,10 @@
         padding: 40px;
         gap: 2rem;
     }
+
+    .about__content__title {
+        font-size: 4rem; /* Ajusta o tamanho do título */
+    }
    
     .about__content {
         align-items: center;
@@ -147,7 +151,7 @@
     }
 
     .about__content__text {
-        font-size: 1.1rem; /* Ajusta o tamanho do texto */
+        font-size: 1.5rem; /* Ajusta o tamanho do texto */
     }
 
     .about__background-text {

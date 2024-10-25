@@ -300,20 +300,20 @@
   }
 
   .projects__title h2 {
-      font-size: 2rem;
+      font-size: 4rem;
   }
 
   .carousel__header h3 {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
   }
 
   .carousel__description {
-      font-size: 0.95rem;
+      font-size: 1.5rem;
   }
 
   .carousel__technologies span {
       padding: 4px 8px;
-      font-size: 0.9rem;
+      font-size: 1.5rem;
   }
 
   .carousel__image {
